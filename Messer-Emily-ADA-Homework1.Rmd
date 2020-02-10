@@ -1,0 +1,59 @@
+---
+title: "MODULES 07 AND 08"
+author: "Emily Messer"
+date: "2/9/2020"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Challenge 1
+
+```{r }
+d <- ("There is grandeur in this view of life, with its several powers, having been originally breathed by the Creator into a few forms or into one; and that, whilst this planet has gone circling on according to the fixed law of gravity, from so simple a beginning endless forms most beautiful and most wonderful have been, and are being evolved")
+d
+?str_split()
+library(stringr)
+```
+
+## Challenge 2
+
+```{r }
+m <- 1:159
+m <- m[seq(from = 1, to = 159, by = 2)]
+m
+
+m1 <- matrix(
+  data = c(m),
+  nrow = 8,
+  ncol = 10
+  )
+m1
+
+(m1[5,2])
+(m1[5:7,])
+
+m2 <- (m1[3:6, 4:9])
+m2
+class(m2)
+mode(m2)
+```
+
+## Challenge 3
+
+```{r }
+a <-array(data = 400:1, dim = c(5, 5, 4, 4))
+a
+(a[1, 1, 1, 2]) ## not sure about this answer...
+(a[2, 3, 2, ])
+(a[1:5, 1:5, 3, 3])
+```
+
+## Challenge 4
+
+```{r }
+
+```
+
