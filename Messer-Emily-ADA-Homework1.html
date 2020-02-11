@@ -375,7 +375,17 @@ summary {
 d</code></pre>
 <pre><code>## [1] &quot;There is grandeur in this view of life, with its several powers, having been originally breathed by the Creator into a few forms or into one; and that, whilst this planet has gone circling on according to the fixed law of gravity, from so simple a beginning endless forms most beautiful and most wonderful have been, and are being evolved&quot;</code></pre>
 <pre class="r"><code>?str_split()
-library(stringr)</code></pre>
+library(stringr)
+s&lt;- str_split(d, ' ')[[1]]
+everyfourth &lt;- s[seq(from=1, to=length(s), 4)]
+everyfourth</code></pre>
+<pre><code>##  [1] &quot;There&quot;  &quot;this&quot;   &quot;with&quot;   &quot;having&quot; &quot;by&quot;     &quot;a&quot;      &quot;into&quot;  
+##  [8] &quot;whilst&quot; &quot;gone&quot;   &quot;to&quot;     &quot;of&quot;     &quot;simple&quot; &quot;forms&quot;  &quot;most&quot;  
+## [15] &quot;and&quot;</code></pre>
+<pre class="r"><code>sort(everyfourth, decreasing = TRUE)</code></pre>
+<pre><code>##  [1] &quot;with&quot;   &quot;whilst&quot; &quot;to&quot;     &quot;this&quot;   &quot;There&quot;  &quot;simple&quot; &quot;of&quot;    
+##  [8] &quot;most&quot;   &quot;into&quot;   &quot;having&quot; &quot;gone&quot;   &quot;forms&quot;  &quot;by&quot;     &quot;and&quot;   
+## [15] &quot;a&quot;</code></pre>
 </div>
 <div id="challenge-2" class="section level2">
 <h2>Challenge 2</h2>

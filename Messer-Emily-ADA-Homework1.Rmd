@@ -16,6 +16,10 @@ d <- ("There is grandeur in this view of life, with its several powers, having b
 d
 ?str_split()
 library(stringr)
+s<- str_split(d, ' ')[[1]]
+everyfourth <- s[seq(from=1, to=length(s), 4)]
+everyfourth
+sort(everyfourth, decreasing = TRUE)
 ```
 
 ## Challenge 2
