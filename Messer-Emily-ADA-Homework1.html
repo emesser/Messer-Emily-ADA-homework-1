@@ -578,7 +578,7 @@ a</code></pre>
 ## [3,]   23   18   13    8    3
 ## [4,]   22   17   12    7    2
 ## [5,]   21   16   11    6    1</code></pre>
-<pre class="r"><code>(a[1, 1, 1, 2]) ## not sure about this answer...</code></pre>
+<pre class="r"><code>(a[1, 1, 1, 2]) </code></pre>
 <pre><code>## [1] 300</code></pre>
 <pre class="r"><code>(a[2, 3, 2, ])</code></pre>
 <pre><code>## [1] 364 264 164  64</code></pre>
@@ -592,6 +592,19 @@ a</code></pre>
 </div>
 <div id="challenge-4" class="section level2">
 <h2>Challenge 4</h2>
+<pre class="r"><code>superfamily = list(Lorisoidea = &quot;Lorisidae&quot;, &quot;Galagidae&quot;, Lemuroidea = &quot;Cheirogaleidae&quot;, &quot;Lepilemuridae&quot;, &quot;Indriidae&quot;, &quot;Lemuridae&quot;, &quot;Daubentoniidae&quot;, Tarsioidea = &quot;Tarsiidae&quot;, Ceboidea = &quot;Cebidae&quot;, &quot;Atelidae&quot;, &quot;Pitheciidae&quot;, Hominoidea = &quot;Hylobatidae&quot;, &quot;Hominidae&quot;, Cercopithecoidea = &quot;Cercopithecidae&quot;)
+parvorder = list(Platyrrhini = &quot;Ceboidea&quot;, Catarrhini = &quot;Hominoidea&quot;, &quot;Cercopithecoidea&quot;)
+infraorder = list(Lorisiformes = &quot;Lorisidae&quot;, Lemuriformes = &quot;Lemuroidea&quot;, Tarsiiformes = &quot;Tarsiidae&quot;, Simiiformes = &quot;Platyrrhini&quot;, &quot;Catarrhini&quot; )
+suborder = list(Strepsirhini = &quot;Lorisiformes&quot;, &quot;Lemuriformes&quot;, Haplorhini = &quot;Tarsiiformes&quot;, &quot;Simiiformes&quot;)
+primates = list(suborder, infraorder, parvorder, superfamily)
+
+nwm &lt;-primates[[3]] [1]  
+class(nwm)  </code></pre>
+<pre><code>## [1] &quot;list&quot;</code></pre>
+<pre class="r"><code>mode(nwm)</code></pre>
+<pre><code>## [1] &quot;list&quot;</code></pre>
+<pre class="r"><code>primates[[2]]$Tarsiiformes</code></pre>
+<pre><code>## [1] &quot;Tarsiidae&quot;</code></pre>
 </div>
 
 

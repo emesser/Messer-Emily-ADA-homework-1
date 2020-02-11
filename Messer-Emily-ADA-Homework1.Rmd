@@ -50,7 +50,7 @@ mode(m2)
 ```{r }
 a <-array(data = 400:1, dim = c(5, 5, 4, 4))
 a
-(a[1, 1, 1, 2]) ## not sure about this answer...
+(a[1, 1, 1, 2]) 
 (a[2, 3, 2, ])
 (a[1:5, 1:5, 3, 3])
 ```
@@ -58,6 +58,16 @@ a
 ## Challenge 4
 
 ```{r }
+superfamily = list(Lorisoidea = "Lorisidae", "Galagidae", Lemuroidea = "Cheirogaleidae", "Lepilemuridae", "Indriidae", "Lemuridae", "Daubentoniidae", Tarsioidea = "Tarsiidae", Ceboidea = "Cebidae", "Atelidae", "Pitheciidae", Hominoidea = "Hylobatidae", "Hominidae", Cercopithecoidea = "Cercopithecidae")
+parvorder = list(Platyrrhini = "Ceboidea", Catarrhini = "Hominoidea", "Cercopithecoidea")
+infraorder = list(Lorisiformes = "Lorisidae", Lemuriformes = "Lemuroidea", Tarsiiformes = "Tarsiidae", Simiiformes = "Platyrrhini", "Catarrhini" )
+suborder = list(Strepsirhini = "Lorisiformes", "Lemuriformes", Haplorhini = "Tarsiiformes", "Simiiformes")
+primates = list(suborder, infraorder, parvorder, superfamily)
 
+nwm <-primates[[3]] [1]  
+class(nwm)  
+mode(nwm)
+
+primates[[2]]$Tarsiiformes
 ```
 
